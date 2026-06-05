@@ -1,0 +1,10 @@
+target/
+allure-results/
+allure-report/
+*.class
+*.log
+.idea/
+*.iml
+.DS_Store
+test-output/
+playwright/.local-browsers/
