@@ -18,7 +18,7 @@ public interface ConfigManager extends Config {
 
     @Key("headless")
     @DefaultValue("false")
-    boolean headless();
+    String headless();
 
     @Key("slow_mo")
     @DefaultValue("0")

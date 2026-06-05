@@ -19,7 +19,7 @@ public class BrowserManager {
 
         playwright = Playwright.create();
         BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions()
-                .setHeadless(config.headless())
+                .setHeadless(Boolean.parseBoolean(config.headless()))
                 .setSlowMo(config.slowMo());
 
         browser = switch (config.browser().toLowerCase()) {
